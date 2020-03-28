@@ -1,0 +1,55 @@
+Repeat Ans
+getKey→K
+If K=45
+Stop
+End
+K-10→E
+For(K,1,14
+If [J](J,K
+E-1→E
+If E=0
+Goto 1
+End
+
+
+
+Lbl 1
+If K>15
+0→K
+K+D→I
+
+
+
+If I>15
+Goto 2
+prgmMAP
+If I=15
+Then
+I-D→I
+prgmMAP
+Output(T,S," "
+0→[J](J,I
+Y+(J=2→Y
+X+(J=1→X
+Output(1,3,X
+Output(10,3,Y
+Goto 3
+End
+If [J](J,I)≠1
+Then
+If J=1
+Output(T,S,"X
+If J=2
+Output(T,S,"O
+1→[J](J,I
+I-D→I
+If I≠0
+Then
+0→[J](J,I
+prgmMAP
+Output(T,S," 
+End
+Goto 3
+Lbl 2
+prgmZMOVEPOS
+Lbl 3
