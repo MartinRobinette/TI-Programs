@@ -1,0 +1,10 @@
+If 4<I and I<13
+Then
+2→T
+I-4→S
+Else
+5(I<5)-I+21(I>12→S
+J+(J=2→T
+End
+T*2+2→T
+S*2→S
