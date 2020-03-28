@@ -1,0 +1,55 @@
+ClrHome
+2→L
+8→X
+4→Y
+7→S
+4→T
+3→D
+9→A
+4→B
+DelVar [A]{10,26→dim([A]
+D→[A](T,S
+Repeat K=45 or [A](Y,X
+Output(B,A,"*
+Output(Y,X,"O
+D→[A](Y,X
+X+(D=3)-(D=1
+Ans+26((Ans=0)-(Ans=27→X
+Y+(D=4)-(D=2
+Ans+10((Ans=0)-(Ans=11→Y
+If A=X and B=Y:Then
+randInt(1,26→A
+randInt(1,10→B
+L+1→L
+Else
+Output(T,S," 
+[A](T,S→E
+0→[A](T,S
+S+(E=3)-(E=1
+Ans+26((Ans=0)-(Ans=27→S
+T+(E=4)-(E=2
+Ans+10((Ans=0)-(Ans=11→T
+End
+getKey→K
+If Ans=34 or 1≥abs(Ans-25
+sum(K≥{24,25,26,34→D
+End
+ClrHome
+Disp "SCORE:
+If L>L₆(5:Then
+Disp "NEW HIGHSCORE!
+Else
+Disp "HIGHSCORES
+End
+Output(1,8,L
+L→L₆(6
+SortD(L₆
+For(A,1,5
+Output(A+2,1,A
+Output(A+2,3,L₆(A
+End
+L₆(7)-1→L₆(7
+L₆(8)-L→L₆(8
+Output(8,1,"AVG:
+Output(8,6,round(Ans/L₆(7),2
+Pause 
