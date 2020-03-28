@@ -1,0 +1,21 @@
+ClrHome
+Disp "ENTER LIMIT VALUE"
+Prompt X
+
+(X-.1)→L₅(1)
+(X-.01)→L₅(2)
+(X-.001)→L₅(3)
+X→L₅(4)
+(X+.001)→L₅(5)
+(X+.01)→L₅(6)
+(X+.1)→L₅(7)
+
+For(I,1,7,1)
+Output(I+3,1,L₅(I))
+If I≠4
+Output(I+3,8,Y₁(L₅(I)))
+End
+Output(7,8,"------")
+Repeat getKey=45
+End
+ClrHome
