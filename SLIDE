@@ -1,0 +1,88 @@
+ClrHome
+Menu("SLIDE","CONTINE",C,"NEW GAME",N,"QUIT",Q
+Lbl C
+dim([B])→L
+0→G
+0→R
+Goto S
+Lbl N
+1→R
+1→G
+2→L
+Menu("SIZE","3",3,"4",4,"5",5
+Lbl 5
+L+1→L
+Output(1,1,5)
+Lbl 4
+L+1→L
+Lbl 3
+L+1→L
+Lbl S
+2→O
+3→N
+0→C
+
+{L,L→dim([B]
+For(I,1,L
+For(J,1,L
+If R
+(IJ≠LL)(L*(J-1)+I→[B](J,I
+Output(JO,IN-1,"|  |
+If [B](J,I)=0
+Then
+J→Y
+I→X
+Else
+Output(JO,IN,[B](J,I
+End
+Output(JO-1,IN-1,"+--+
+If L<5
+Output(JO+1,IN-1,"+--+
+End
+End
+If G
+Then
+For(I,0,200
+randInt(1,4→D
+Y→T
+X→S
+X+(D=1)-(D=3→X
+Y+(D=2)-(D=4→Y
+If XY≠0 and X≠L+1 and Y≠L+1
+Then
+Output(OT,SN,"  "
+Output(OT,SN,[B](Y,X
+[B](Y,X)→[B](T,S)
+Output(OY,XN,"  "
+0→[B](Y,X)
+Else
+S→X
+T→Y
+End
+End
+End
+Repeat K=45
+getKey→K
+If Ans=34 or 1≥abs(Ans-25
+Then
+sum(K≥{24,25,26,34→D
+Y→T
+X→S
+X+(D=1)-(D=3→X
+Y+(D=2)-(D=4→Y
+If XY≠0 and X≠L+1 and Y≠L+1
+Then
+C+1→C
+Output(OT,SN,"  "
+Output(OT,SN,[B](Y,X
+[B](Y,X)→[B](T,S)
+Output(OY,XN,"  "
+0→[B](Y,X)
+Else
+S→X
+T→Y
+End
+End
+End
+Lbl Q
+ClrHome
